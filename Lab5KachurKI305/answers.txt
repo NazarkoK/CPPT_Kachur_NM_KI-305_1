@@ -1,0 +1,41 @@
+1. **Принципи роботи з файловою системою в Java:**
+   - Використовуються класи `File`, `FileReader`, `FileWriter`, `BufferedReader`, `BufferedWriter`, `FileInputStream`, та `FileOutputStream` для читання та запису файлів. 
+   - Класи `File` та `Path` використовуються для роботи з іменами файлів та шляхами.
+
+2. **Характеристика класу Scanner:**
+   - `Scanner` - це клас у пакеті `java.util`, який надає зручний інтерфейс для читання введення з різних джерел, таких як клавіатура або файли.
+
+3. **Приклад використання класу Scanner:**
+   ```java
+   import java.util.Scanner;
+
+   public class ScannerExample {
+       public static void main(String[] args) {
+           Scanner scanner = new Scanner(System.in);
+           System.out.print("Введіть текст: ");
+           String input = scanner.nextLine();
+           System.out.println("Ви ввели: " + input);
+       }
+   }
+   ```
+
+4. **Клас для запису у текстовий потік:**
+   - `PrintWriter` дозволяє легко записувати текст у текстовий файл чи інший вихідний потік.
+
+5. **Характеристика класу PrintWriter:**
+   - `PrintWriter` - це клас, який надає методи для виведення різних типів даних у текстовий потік.
+
+6. **Методи читання/запису двійкових даних:**
+   - Для цього використовуються класи `DataInputStream` та `DataOutputStream`.
+
+7. **Призначення класів DataInputStream і DataOutputStream:**
+   - `DataInputStream` і `DataOutputStream` надають методи для читання і запису примітивних типів даних у бінарному форматі.
+
+8. **Клас для довільного доступу до файлів:**
+   - `RandomAccessFile` дозволяє читати та записувати дані в файлі в будь-якому порядку (довільний доступ).
+
+9. **Характеристика класу RandomAccessFile:**
+   - `RandomAccessFile` - це клас, який дозволяє читати та записувати дані в файлі в будь-якому порядку.
+
+10. **Зв’язок між інтерфейсом DataOutput і класом DataOutputStream:**
+    - Клас `DataOutputStream` реалізує інтерфейс `DataOutput`. Цей інтерфейс має методи для запису примітивних типів даних у бінарний потік.
